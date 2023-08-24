@@ -1,13 +1,26 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-public class KeyViewerUI : MonoBehaviour
+public class KeyViewerPage : Page
 {
     [SerializeField]
     private Key[] keys;
 
+    public override UniTask Show()
+    {
+        gameObject.SetActive(true);
+        return UniTask.CompletedTask;
+    }
+
+    public override UniTask Hide()
+    {
+        gameObject.SetActive(false);
+        return UniTask.CompletedTask;
+    }
+
     public void OpenPreferences()
     {
-        Debug.Log("Open Preferences");
+        Navigator.Push("PreferencesPage").Forget();
     }
 
     private void Update()

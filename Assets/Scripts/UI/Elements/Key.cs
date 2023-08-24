@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Key : MonoBehaviour
 {
-    private static readonly Color accent = new Color(0.2588235294f, 0.5215686275f, 0.9568627451f);
+    private static readonly Color accentColor = new(0.2588235294f, 0.5215686275f, 0.9568627451f);
 
     [Header("Targets")]
     [SerializeField]
@@ -21,13 +21,13 @@ public class Key : MonoBehaviour
     private RawKeyCode keyCode = RawKeyCode.None;
 
     [SerializeField]
-    private Color outlinePressedColor = accent;
+    private Color outlinePressedColor = accentColor;
 
     [SerializeField]
-    private Color outlineReleasedColor = accent;
+    private Color outlineReleasedColor = accentColor;
 
     [SerializeField]
-    private Color backgroundPressedColor = accent;
+    private Color backgroundPressedColor = accentColor;
 
     [SerializeField]
     private Color backgroundReleasedColor = Color.black;
@@ -36,7 +36,7 @@ public class Key : MonoBehaviour
     private Color symbolPressedColor = Color.black;
 
     [SerializeField]
-    private Color symbolReleasedColor = accent;
+    private Color symbolReleasedColor = accentColor;
 
     public RawKeyCode KeyCode => keyCode;
 

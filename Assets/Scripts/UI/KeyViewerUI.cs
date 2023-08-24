@@ -5,17 +5,22 @@ public class KeyViewerUI : MonoBehaviour
     [SerializeField]
     private Key[] keys;
 
+    public void OpenPreferences()
+    {
+        Debug.Log("Open Preferences");
+    }
+
     private void Update()
     {
         foreach (var key in keys)
         {
             if (RawInput.KeyDown(key.KeyCode))
             {
-                key.OnPressed();
+                key.Press();
             }
             else
             {
-                key.OnReleased();
+                key.Release();
             }
         }
     }

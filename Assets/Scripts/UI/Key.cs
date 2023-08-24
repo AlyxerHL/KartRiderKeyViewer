@@ -62,7 +62,7 @@ public class Key : MonoBehaviour
 
     public RawKeyCode KeyCode => keyCode;
 
-    public void OnPressed()
+    public void Press()
     {
         outline.color = outlinePressedColor;
         background.color = backgroundPressedColor;
@@ -70,7 +70,7 @@ public class Key : MonoBehaviour
         symbolImage.color = symbolPressedColor;
     }
 
-    public void OnReleased()
+    public void Release()
     {
         outline.color = outlineReleasedColor;
         background.color = backgroundReleasedColor;

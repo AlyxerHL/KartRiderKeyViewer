@@ -229,11 +229,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -285,7 +285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_Name
-      value: KeyInput
+      value: Exceed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
+      propertyPath: m_text
+      value: Exceed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -391,7 +395,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_Name
-      value: ColorInput
+      value: SymbolP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
+      propertyPath: m_text
+      value: Symbol P
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -441,11 +449,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -497,7 +505,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_Name
-      value: KeyInput
+      value: Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
+      propertyPath: m_text
+      value: Left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -706,7 +718,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_Name
-      value: ColorInput
+      value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
+      propertyPath: m_text
+      value: 'Key
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -756,11 +774,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -812,7 +830,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_Name
-      value: KeyInput
+      value: Boost
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
+      propertyPath: m_text
+      value: Boost
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -918,7 +940,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_Name
-      value: ColorInput
+      value: Outline
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
+      propertyPath: m_text
+      value: Outline
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1406,7 +1432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_Name
-      value: ColorInput
+      value: Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
+      propertyPath: m_text
+      value: Background
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1789,7 +1819,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_Name
-      value: ColorInput
+      value: Symbol
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
+      propertyPath: m_text
+      value: Symbol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2641,7 +2675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_Name
-      value: ColorInput
+      value: KeyP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
+      propertyPath: m_text
+      value: Key P
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2976,11 +3014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3032,7 +3070,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_Name
-      value: KeyInput
+      value: Drift
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
+      propertyPath: m_text
+      value: Drift
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3082,11 +3124,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3138,7 +3180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_Name
-      value: KeyInput
+      value: Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
+      propertyPath: m_text
+      value: Right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3188,11 +3234,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3244,7 +3290,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_Name
-      value: KeyInput
+      value: Brake
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
+      propertyPath: m_text
+      value: Brake
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3738,11 +3788,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3794,7 +3844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_Name
-      value: KeyInput
+      value: SlotChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3900,7 +3950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_Name
-      value: ColorInput
+      value: OutlineP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
+      propertyPath: m_text
+      value: Outline P
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4250,11 +4304,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191306346489561684, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4306,7 +4360,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
       propertyPath: m_Name
-      value: KeyInput
+      value: Gas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7403760036852558569, guid: 8f21577a91be349dd80116b3db357f70, type: 3}
+      propertyPath: m_text
+      value: Gas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

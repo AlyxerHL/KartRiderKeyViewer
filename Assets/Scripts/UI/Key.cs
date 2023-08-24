@@ -1,50 +1,103 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Key : MonoBehaviour
 {
     private static readonly Color accent = new Color(0.2588235294f, 0.5215686275f, 0.9568627451f);
-    private static readonly Colors outlineColors = new(accent, accent);
-    private static readonly Colors backgroundColors = new(accent, Color.black);
-    private static readonly Colors symbolColors = new(Color.black, accent);
+
+    [Header("Targets")]
+    [SerializeField]
+    private Image outline;
 
     [SerializeField]
-    private Graphic outline;
+    private Image background;
 
     [SerializeField]
-    private Graphic background;
+    private TextMeshProUGUI symbolText;
 
     [SerializeField]
-    private Graphic symbol;
+    private Image symbolImage;
+
+    [Header("Colors")]
+    [SerializeField]
+    private Color outlinePressedColor = accent;
 
     [SerializeField]
-    private RawKeyCode keyCode;
+    private Color outlineReleasedColor = accent;
+
+    [SerializeField]
+    private Color backgroundPressedColor = accent;
+
+    [SerializeField]
+    private Color backgroundReleasedColor = Color.black;
+
+    [SerializeField]
+    private Color symbolPressedColor = Color.black;
+
+    [SerializeField]
+    private Color symbolReleasedColor = accent;
+
+    [Header("Properties")]
+    [SerializeField]
+    private SymbolType symbolType = SymbolType.Text;
+
+    [SerializeField]
+    private string symbolTextValue = "X";
+
+    [SerializeField]
+    private Sprite symbolImageValue = null;
+
+    [SerializeField]
+    private Vector2 symbolImageOffset = Vector2.zero;
+
+    [SerializeField]
+    private Vector2 symbolImageSize = Vector2.one * 65f;
+
+    [SerializeField]
+    private Vector3 symbolImageRotation = Vector3.zero;
+
+    [SerializeField]
+    private RawKeyCode keyCode = RawKeyCode.None;
 
     public RawKeyCode KeyCode => keyCode;
 
     public void OnPressed()
     {
-        outline.color = outlineColors.pressed;
-        background.color = backgroundColors.pressed;
-        symbol.color = symbolColors.pressed;
+        outline.color = outlinePressedColor;
+        background.color = backgroundPressedColor;
+        symbolText.color = symbolPressedColor;
+        symbolImage.color = symbolPressedColor;
     }
 
     public void OnReleased()
     {
-        outline.color = outlineColors.released;
-        background.color = backgroundColors.released;
-        symbol.color = symbolColors.released;
+        outline.color = outlineReleasedColor;
+        background.color = backgroundReleasedColor;
+        symbolText.color = symbolReleasedColor;
+        symbolImage.color = symbolReleasedColor;
     }
 
-    private struct Colors
+    private void Awake()
     {
-        public Color pressed { get; set; }
-        public Color released { get; set; }
-
-        public Colors(Color pressed, Color released)
+        if (symbolType == SymbolType.Text)
         {
-            this.pressed = pressed;
-            this.released = released;
+            symbolText.text = symbolTextValue;
+            symbolText.gameObject.SetActive(true);
         }
+        else if (symbolType == SymbolType.Image)
+        {
+            symbolImage.sprite = symbolImageValue;
+            symbolImage.rectTransform.anchoredPosition = symbolImageOffset;
+            symbolImage.rectTransform.sizeDelta = symbolImageSize;
+            symbolImage.rectTransform.localEulerAngles = symbolImageRotation;
+            symbolImage.gameObject.SetActive(true);
+        }
+    }
+
+    public enum SymbolType
+    {
+        Text,
+        Image
     }
 }

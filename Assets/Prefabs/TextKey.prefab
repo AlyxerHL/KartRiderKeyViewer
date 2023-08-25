@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4645992581922664160}
   - component: {fileID: 4101683601211610353}
   m_Layer: 5
-  m_Name: Outline
+  m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 1785709477388714078}
   - component: {fileID: 363732637423892704}
   m_Layer: 5
-  m_Name: Background
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 2191300084791249019}
   - component: {fileID: 2198504763266477522}
   m_Layer: 5
-  m_Name: Symbol
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -339,15 +339,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 729fa2a4da1ce473b9bb7a2c4a4bd62f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outline: {fileID: 4101683601211610353}
-  background: {fileID: 363732637423892704}
-  symbol: {fileID: 2198504763266477522}
-  symbolText: {fileID: 2198504763266477522}
-  symbolImage: {fileID: 0}
-  keyCode: 0
-  outlinePressedColor: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  outlineReleasedColor: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  backgroundPressedColor: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  backgroundReleasedColor: {r: 0, g: 0, b: 0, a: 1}
-  symbolPressedColor: {r: 0, g: 0, b: 0, a: 1}
-  symbolReleasedColor: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  key: {fileID: 363732637423892704}
+  border: {fileID: 4101683601211610353}
+  text: {fileID: 2198504763266477522}
+  <keyCode>k__BackingField: 0
+  <keyColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
+  <keyPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <borderColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <borderPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <textColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <textPressColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}

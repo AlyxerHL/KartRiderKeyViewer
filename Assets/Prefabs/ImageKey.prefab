@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1017414328143418604}
   - component: {fileID: 3644239008148509601}
   m_Layer: 5
-  m_Name: Outline
+  m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,18 +128,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 729fa2a4da1ce473b9bb7a2c4a4bd62f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outline: {fileID: 3644239008148509601}
-  background: {fileID: 4381228885329161935}
-  symbol: {fileID: 1252414904677366901}
-  symbolText: {fileID: 0}
-  symbolImage: {fileID: 1252414904677366901}
-  keyCode: 37
-  outlinePressedColor: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  outlineReleasedColor: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  backgroundPressedColor: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  backgroundReleasedColor: {r: 0, g: 0, b: 0, a: 1}
-  symbolPressedColor: {r: 0, g: 0, b: 0, a: 1}
-  symbolReleasedColor: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  key: {fileID: 4381228885329161935}
+  border: {fileID: 3644239008148509601}
+  text: {fileID: 1252414904677366901}
+  <keyCode>k__BackingField: 0
+  <keyColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
+  <keyPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <borderColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <borderPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <textColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <textPressColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &4673554799564724429
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +150,7 @@ GameObject:
   - component: {fileID: 1461436891153288877}
   - component: {fileID: 1252414904677366901}
   m_Layer: 5
-  m_Name: Symbol
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,7 +226,7 @@ GameObject:
   - component: {fileID: 3527629118144650863}
   - component: {fileID: 4381228885329161935}
   m_Layer: 5
-  m_Name: Background
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -80,12 +80,12 @@ public class PreferencesPage : Page
 
     public void SaveColorPreference(ColorInput input)
     {
-        Preferences.SaveColor(input.name, input.color);
+        Preferences.SaveColor(input.name, input.Color);
     }
 
     public void SaveKeyPreference(KeyInput input)
     {
-        Preferences.SaveKey(input.name, input.keyCode);
+        Preferences.SaveKey(input.name, input.KeyCode);
     }
 
     private void Awake()
@@ -97,12 +97,12 @@ public class PreferencesPage : Page
     {
         foreach (var colorInput in colorInputs)
         {
-            colorInput.color = Preferences.LoadColor(colorInput.name, colorInput.color);
+            colorInput.Color = Preferences.LoadColor(colorInput.name, colorInput.Color);
         }
 
         foreach (var keyInput in keyInputs)
         {
-            keyInput.keyCode = Preferences.LoadKey(keyInput.name, keyInput.keyCode);
+            keyInput.KeyCode = Preferences.LoadKey(keyInput.name, keyInput.KeyCode);
         }
     }
 }

@@ -1,8 +1,12 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KeyViewerPage : Page
 {
+    [SerializeField]
+    private Image background;
+
     [SerializeField]
     private Key[] keys;
 
@@ -23,12 +27,10 @@ public class KeyViewerPage : Page
         Navigator.Push("PreferencesPage").Forget();
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        foreach (var key in keys)
-        {
-            key.keyCode = Preferences.LoadKey(key.name, key.keyCode);
-        }
+        Debug.Log("ASDF");
+        LoadPreferences();
     }
 
     private void Update()
@@ -43,6 +45,21 @@ public class KeyViewerPage : Page
             {
                 key.Release();
             }
+        }
+    }
+
+    private void LoadPreferences()
+    {
+        background.color = Preferences.LoadColor(background.name, background.color);
+        foreach (var key in keys)
+        {
+            key.keyCode = Preferences.LoadKey(key.name, key.keyCode);
+            key.keyColor = Preferences.LoadColor("Key", key.keyColor);
+            key.keyPressColor = Preferences.LoadColor("KeyPress", key.keyPressColor);
+            key.borderColor = Preferences.LoadColor("Border", key.borderColor);
+            key.borderPressColor = Preferences.LoadColor("BorderPress", key.borderPressColor);
+            key.textColor = Preferences.LoadColor("Text", key.textColor);
+            key.textPressColor = Preferences.LoadColor("TextPress", key.textPressColor);
         }
     }
 }

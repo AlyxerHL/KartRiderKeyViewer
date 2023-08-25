@@ -5,47 +5,47 @@ public class Key : MonoBehaviour
 {
     [Header("Targets")]
     [SerializeField]
-    private Image outline;
+    private Image key;
 
     [SerializeField]
-    private Image background;
+    private Image border;
 
     [SerializeField]
-    private Graphic symbol;
+    private Graphic text;
 
     [field: Header("Properties")]
     [field: SerializeField]
     public RawKeyCode keyCode { get; set; } = RawKeyCode.None;
 
-    [SerializeField]
-    private Color outlinePressedColor = Color.white;
+    [field: SerializeField]
+    public Color keyColor { get; set; } = Color.black;
 
-    [SerializeField]
-    private Color outlineReleasedColor = Color.white;
+    [field: SerializeField]
+    public Color keyPressColor { get; set; } = Color.white;
 
-    [SerializeField]
-    private Color backgroundPressedColor = Color.white;
+    [field: SerializeField]
+    public Color borderColor { get; set; } = Color.white;
 
-    [SerializeField]
-    private Color backgroundReleasedColor = Color.black;
+    [field: SerializeField]
+    public Color borderPressColor { get; set; } = Color.white;
 
-    [SerializeField]
-    private Color symbolPressedColor = Color.black;
+    [field: SerializeField]
+    public Color textColor { get; set; } = Color.white;
 
-    [SerializeField]
-    private Color symbolReleasedColor = Color.white;
+    [field: SerializeField]
+    public Color textPressColor { get; set; } = Color.black;
 
     public void Press()
     {
-        outline.color = outlinePressedColor;
-        background.color = backgroundPressedColor;
-        symbol.color = symbolPressedColor;
+        key.color = keyPressColor;
+        border.color = borderPressColor;
+        text.color = textPressColor;
     }
 
     public void Release()
     {
-        outline.color = outlineReleasedColor;
-        background.color = backgroundReleasedColor;
-        symbol.color = symbolReleasedColor;
+        key.color = keyColor;
+        border.color = borderColor;
+        text.color = textColor;
     }
 }

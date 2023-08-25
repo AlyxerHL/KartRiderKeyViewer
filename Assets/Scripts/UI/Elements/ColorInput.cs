@@ -13,12 +13,23 @@ public class ColorInput : MonoBehaviour
     [SerializeField]
     private TMP_InputField hex;
 
-    [field: Header("Properties")]
-    [field: SerializeField]
-    public Color color { get; set; }
+    [Header("Properties")]
+    [SerializeField]
+    private Color color;
 
     [SerializeField]
     private UnityEvent<Color> onColorChanged;
+
+    public Color Color
+    {
+        get => color;
+        set
+        {
+            color = value;
+            onColorChanged?.Invoke(color);
+            ApplyColor();
+        }
+    }
 
     public void HandleValueChanged()
     {
@@ -29,10 +40,8 @@ public class ColorInput : MonoBehaviour
     {
         if (ColorUtility.TryParseHtmlString($"#{hex.text}", out var newColor))
         {
-            color = newColor;
-            onColorChanged?.Invoke(color);
+            Color = newColor;
         }
-        ApplyColor();
     }
 
     private void Awake()

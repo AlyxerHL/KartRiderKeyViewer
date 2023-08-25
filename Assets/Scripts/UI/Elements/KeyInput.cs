@@ -12,12 +12,23 @@ public class KeyInput : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI placeholder;
 
-    [field: Header("Properties")]
-    [field: SerializeField]
-    public RawKeyCode keyCode { get; set; }
+    [Header("Properties")]
+    [SerializeField]
+    private RawKeyCode keyCode;
 
     [SerializeField]
     private UnityEvent<RawKeyCode> onKeyCodeChanged;
+
+    public RawKeyCode KeyCode
+    {
+        get => keyCode;
+        set
+        {
+            keyCode = value;
+            onKeyCodeChanged.Invoke(keyCode);
+            preview.text = keyCode.ToString();
+        }
+    }
 
     public void HandleClick()
     {
@@ -29,9 +40,7 @@ public class KeyInput : MonoBehaviour
             var newKeyCode = await RawInput.ReadKey();
             if (newKeyCode != RawKeyCode.Escape)
             {
-                keyCode = newKeyCode;
-                onKeyCodeChanged.Invoke(keyCode);
-                preview.text = keyCode.ToString();
+                KeyCode = newKeyCode;
             }
 
             placeholder.gameObject.SetActive(false);

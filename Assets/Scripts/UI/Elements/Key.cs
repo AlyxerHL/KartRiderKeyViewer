@@ -3,8 +3,6 @@ using UnityEngine.UI;
 
 public class Key : MonoBehaviour
 {
-    private static readonly Color accentColor = new(0.2588235294f, 0.5215686275f, 0.9568627451f);
-
     [Header("Targets")]
     [SerializeField]
     private Image outline;
@@ -20,13 +18,13 @@ public class Key : MonoBehaviour
     private RawKeyCode keyCode = RawKeyCode.None;
 
     [SerializeField]
-    private Color outlinePressedColor = accentColor;
+    private Color outlinePressedColor = Color.white;
 
     [SerializeField]
-    private Color outlineReleasedColor = accentColor;
+    private Color outlineReleasedColor = Color.white;
 
     [SerializeField]
-    private Color backgroundPressedColor = accentColor;
+    private Color backgroundPressedColor = Color.white;
 
     [SerializeField]
     private Color backgroundReleasedColor = Color.black;
@@ -35,7 +33,7 @@ public class Key : MonoBehaviour
     private Color symbolPressedColor = Color.black;
 
     [SerializeField]
-    private Color symbolReleasedColor = accentColor;
+    private Color symbolReleasedColor = Color.white;
 
     public RawKeyCode KeyCode => keyCode;
 

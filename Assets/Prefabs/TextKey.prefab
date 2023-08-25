@@ -342,10 +342,10 @@ MonoBehaviour:
   key: {fileID: 363732637423892704}
   border: {fileID: 4101683601211610353}
   text: {fileID: 2198504763266477522}
-  <keyCode>k__BackingField: 0
-  <keyColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
-  <keyPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  <borderColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  <borderPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  <textColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  <textPressColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
+  <KeyCode>k__BackingField: 0
+  <KeyColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
+  <KeyPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <BorderColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <BorderPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <TextColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <TextPressColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}

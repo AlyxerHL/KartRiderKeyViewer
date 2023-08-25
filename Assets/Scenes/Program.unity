@@ -4732,7 +4732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5166576489413974681, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_Name
-      value: BorderDown
+      value: BorderPress
       objectReference: {fileID: 0}
     - target: {fileID: 6643793008484447602, guid: c49cbef05d2c54e0fbef47d4533aeffb, type: 3}
       propertyPath: m_text

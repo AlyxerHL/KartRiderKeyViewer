@@ -131,13 +131,13 @@ MonoBehaviour:
   key: {fileID: 4381228885329161935}
   border: {fileID: 3644239008148509601}
   text: {fileID: 1252414904677366901}
-  <keyCode>k__BackingField: 0
-  <keyColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
-  <keyPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  <borderColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  <borderPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  <textColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
-  <textPressColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
+  <KeyCode>k__BackingField: 0
+  <KeyColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
+  <KeyPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <BorderColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <BorderPressColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <TextColor>k__BackingField: {r: 0.25882354, g: 0.52156866, b: 0.95686275, a: 1}
+  <TextPressColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &4673554799564724429
 GameObject:
   m_ObjectHideFlags: 0

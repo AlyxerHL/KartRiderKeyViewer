@@ -27,16 +27,11 @@ public class KeyViewerPage : Page
         Navigator.Push("PreferencesPage").Forget();
     }
 
-    private void OnEnable()
-    {
-        LoadPreferences();
-    }
-
     private void Update()
     {
         foreach (var key in keys)
         {
-            if (RawInput.KeyDown(key.keyCode))
+            if (RawInput.KeyDown(key.KeyCode))
             {
                 key.Press();
             }
@@ -47,18 +42,18 @@ public class KeyViewerPage : Page
         }
     }
 
-    private void LoadPreferences()
+    private void OnEnable()
     {
         background.color = Preferences.LoadColor(background.name, background.color);
         foreach (var key in keys)
         {
-            key.keyCode = Preferences.LoadKey(key.name, key.keyCode);
-            key.keyColor = Preferences.LoadColor("Key", key.keyColor);
-            key.keyPressColor = Preferences.LoadColor("KeyPress", key.keyPressColor);
-            key.borderColor = Preferences.LoadColor("Border", key.borderColor);
-            key.borderPressColor = Preferences.LoadColor("BorderPress", key.borderPressColor);
-            key.textColor = Preferences.LoadColor("Text", key.textColor);
-            key.textPressColor = Preferences.LoadColor("TextPress", key.textPressColor);
+            key.KeyCode = Preferences.LoadKey(key.name, key.KeyCode);
+            key.KeyColor = Preferences.LoadColor("Key", key.KeyColor);
+            key.KeyPressColor = Preferences.LoadColor("KeyPress", key.KeyPressColor);
+            key.BorderColor = Preferences.LoadColor("Border", key.BorderColor);
+            key.BorderPressColor = Preferences.LoadColor("BorderPress", key.BorderPressColor);
+            key.TextColor = Preferences.LoadColor("Text", key.TextColor);
+            key.TextPressColor = Preferences.LoadColor("TextPress", key.TextPressColor);
         }
     }
 }

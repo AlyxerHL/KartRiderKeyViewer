@@ -15,37 +15,37 @@ public class Key : MonoBehaviour
 
     [field: Header("Properties")]
     [field: SerializeField]
-    public RawKeyCode keyCode { get; set; } = RawKeyCode.None;
+    public RawKeyCode KeyCode { get; set; } = RawKeyCode.None;
 
     [field: SerializeField]
-    public Color keyColor { get; set; } = Color.black;
+    public Color KeyColor { get; set; } = Color.black;
 
     [field: SerializeField]
-    public Color keyPressColor { get; set; } = Color.white;
+    public Color KeyPressColor { get; set; } = Color.white;
 
     [field: SerializeField]
-    public Color borderColor { get; set; } = Color.white;
+    public Color BorderColor { get; set; } = Color.white;
 
     [field: SerializeField]
-    public Color borderPressColor { get; set; } = Color.white;
+    public Color BorderPressColor { get; set; } = Color.white;
 
     [field: SerializeField]
-    public Color textColor { get; set; } = Color.white;
+    public Color TextColor { get; set; } = Color.white;
 
     [field: SerializeField]
-    public Color textPressColor { get; set; } = Color.black;
+    public Color TextPressColor { get; set; } = Color.black;
 
     public void Press()
     {
-        key.color = keyPressColor;
-        border.color = borderPressColor;
-        text.color = textPressColor;
+        key.color = KeyPressColor;
+        border.color = BorderPressColor;
+        text.color = TextPressColor;
     }
 
     public void Release()
     {
-        key.color = keyColor;
-        border.color = borderColor;
-        text.color = textColor;
+        key.color = KeyColor;
+        border.color = BorderColor;
+        text.color = TextColor;
     }
 }

@@ -29,13 +29,17 @@ public class ColorInput : MonoBehaviour
     {
         if (ColorUtility.TryParseHtmlString($"#{hex.text}", out color))
         {
-            preview.color = color;
+            onColorChanged?.Invoke(color);
         }
-
-        hex.text = ColorUtility.ToHtmlStringRGB(preview.color);
+        ApplyColor();
     }
 
     private void Awake()
+    {
+        ApplyColor();
+    }
+
+    private void ApplyColor()
     {
         preview.color = color;
         hex.text = ColorUtility.ToHtmlStringRGB(color);

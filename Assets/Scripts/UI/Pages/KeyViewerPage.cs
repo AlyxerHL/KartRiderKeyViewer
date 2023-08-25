@@ -29,7 +29,6 @@ public class KeyViewerPage : Page
 
     private void OnEnable()
     {
-        Debug.Log("ASDF");
         LoadPreferences();
     }
 

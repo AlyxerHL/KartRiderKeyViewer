@@ -10,6 +10,7 @@ public class PreferencesPage : Page
     [SerializeField]
     private float transitionSpeed = 1000f;
 
+    [Header("Color Tab")]
     [SerializeField]
     private Image colorSymbol;
 
@@ -17,10 +18,17 @@ public class PreferencesPage : Page
     private GameObject colorTab;
 
     [SerializeField]
+    private ColorInput[] colorInputs;
+
+    [Header("Key Tab")]
+    [SerializeField]
     private Image keySymbol;
 
     [SerializeField]
     private GameObject keyTab;
+
+    [SerializeField]
+    private KeyInput[] keyInputs;
 
     private RectTransform rectTransform;
 
@@ -51,6 +59,7 @@ public class PreferencesPage : Page
     public void Close()
     {
         Navigator.Pop().Forget();
+        Preferences.Sync();
     }
 
     public void OpenColorTab()
@@ -69,8 +78,31 @@ public class PreferencesPage : Page
         keySymbol.color = accentColor;
     }
 
+    public void SaveColorPreference(ColorInput input)
+    {
+        Preferences.SaveColor(input.name, input.color);
+    }
+
+    public void SaveKeyPreference(KeyInput input)
+    {
+        Preferences.SaveKey(input.name, input.keyCode);
+    }
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
+    }
+
+    private void Start()
+    {
+        foreach (var colorInput in colorInputs)
+        {
+            colorInput.color = Preferences.LoadColor(colorInput.name, colorInput.color);
+        }
+
+        foreach (var keyInput in keyInputs)
+        {
+            keyInput.keyCode = Preferences.LoadKey(keyInput.name, keyInput.keyCode);
+        }
     }
 }

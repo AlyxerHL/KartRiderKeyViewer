@@ -13,9 +13,9 @@ public class ColorInput : MonoBehaviour
     [SerializeField]
     private TMP_InputField hex;
 
-    [Header("Properties")]
-    [SerializeField]
-    private Color color;
+    [field: Header("Properties")]
+    [field: SerializeField]
+    public Color color { get; set; }
 
     [SerializeField]
     private UnityEvent<Color> onColorChanged;
@@ -27,8 +27,9 @@ public class ColorInput : MonoBehaviour
 
     public void HandleEndEdit()
     {
-        if (ColorUtility.TryParseHtmlString($"#{hex.text}", out color))
+        if (ColorUtility.TryParseHtmlString($"#{hex.text}", out var newColor))
         {
+            color = newColor;
             onColorChanged?.Invoke(color);
         }
         ApplyColor();

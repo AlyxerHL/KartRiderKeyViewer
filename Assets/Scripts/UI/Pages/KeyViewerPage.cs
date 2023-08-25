@@ -23,11 +23,19 @@ public class KeyViewerPage : Page
         Navigator.Push("PreferencesPage").Forget();
     }
 
+    private void Start()
+    {
+        foreach (var key in keys)
+        {
+            key.keyCode = Preferences.LoadKey(key.name, key.keyCode);
+        }
+    }
+
     private void Update()
     {
         foreach (var key in keys)
         {
-            if (RawInput.KeyDown(key.KeyCode))
+            if (RawInput.KeyDown(key.keyCode))
             {
                 key.Press();
             }

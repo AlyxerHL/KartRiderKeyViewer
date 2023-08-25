@@ -12,9 +12,9 @@ public class KeyInput : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI placeholder;
 
-    [Header("Properties")]
-    [SerializeField]
-    private RawKeyCode keyCode;
+    [field: Header("Properties")]
+    [field: SerializeField]
+    public RawKeyCode keyCode { get; set; }
 
     [SerializeField]
     private UnityEvent<RawKeyCode> onKeyCodeChanged;

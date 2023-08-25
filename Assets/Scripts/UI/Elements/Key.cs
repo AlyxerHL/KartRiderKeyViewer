@@ -13,9 +13,9 @@ public class Key : MonoBehaviour
     [SerializeField]
     private Graphic symbol;
 
-    [Header("Properties")]
-    [SerializeField]
-    private RawKeyCode keyCode = RawKeyCode.None;
+    [field: Header("Properties")]
+    [field: SerializeField]
+    public RawKeyCode keyCode { get; set; } = RawKeyCode.None;
 
     [SerializeField]
     private Color outlinePressedColor = Color.white;
@@ -34,8 +34,6 @@ public class Key : MonoBehaviour
 
     [SerializeField]
     private Color symbolReleasedColor = Color.white;
-
-    public RawKeyCode KeyCode => keyCode;
 
     public void Press()
     {
